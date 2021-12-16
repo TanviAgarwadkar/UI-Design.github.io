@@ -1,0 +1,85 @@
+/* add to cart */
+
+#cards {
+    padding: 50px 10px 50px 10px;
+}
+
+.grid-sm-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3em 1fr 3em 1fr 3em 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+    grid-row-gap: 2em;
+}
+
+.Img-col {
+    margin: auto;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Img-col img {
+    transition: all 0.5s;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Img-col:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+    .grid-sm-row {
+        -ms-grid-columns: 1fr 3em 1fr 3em 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .grid-sm-row {
+        -ms-grid-columns: 1fr 3em 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid-sm-row {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+button {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.logout button {
+    float: right;
+}
+
+
+#cards span {
+    background-color: green;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
